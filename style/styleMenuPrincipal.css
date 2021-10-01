@@ -20,14 +20,37 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: 15vh;
+  background-color: white;
+  border-bottom: 1px solid var(--base-color);
+  padding: 3vh 8vw;
+  z-index: 1;
+}
+
+h1 {
+  color: var(--base-color);
+}
+
+.logo {
+  background-image: url("../assets/fotoLivroLogo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 6vw;
+  height: 6vw;
+}
+
 .menuSelecao {
-  position: absolute;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  height: 100%;
+  top: 15vh;
+  height: 85vh;
   width: 25vw;
   padding-left: 1vw;
 }
@@ -39,9 +62,10 @@ a {
 .livrosBox {
   position: absolute;
   right: 0;
+  top: 15vh;
   height: 100%;
   width: 75vw;
-  padding: 7vh 0 0 5vw;
+  padding: 3vh 0 0 5vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,7 +86,7 @@ a {
   background-size: cover;
   width: 100%;
   height: 50%;
-  margin-bottom: 2vh;
+  margin-bottom: 1.5vh;
 }
 
 .livro h3 {
@@ -71,7 +95,9 @@ a {
 }
 
 .livro p {
-  height: 5vw;
+  display: block;
+  margin-top: 1vh;
+  font-size: small;
 }
 
 .reservar {
