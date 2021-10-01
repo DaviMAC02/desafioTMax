@@ -32,6 +32,11 @@ header {
   display: inline;
 }
 
+header img {
+  display: none;
+  opacity: 0;
+}
+
 h1 {
   display: inline;
   font-family: "Roboto", sans-serif;
@@ -121,4 +126,69 @@ input[type="button"]#signup:hover {
   background: var(--base-color);
   color: white;
   border: none;
+}
+@media screen and (max-width: 950px) {
+  header {
+    display: block;
+    height: auto;
+    padding-top: 10.01vh;
+  }
+
+  header img {
+    display: block;
+    opacity: 1;
+    margin: 0 auto;
+    width: 40vw;
+    height: 40vw;
+  }
+
+  h1 {
+    display: block;
+    height: 10vh;
+    font-size: 3.125rem;
+    margin-top: 3vh;
+  }
+
+  section {
+    padding: 0;
+    width: 100vw;
+    margin-top: 0;
+  }
+
+  .rightSide {
+    display: none;
+    opacity: 0;
+  }
+
+  .leftSide {
+    width: 100vw;
+    padding: 0;
+    text-align: center;
+  }
+
+  h2 {
+    display: none;
+    opacity: 0;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 80vw;
+    margin-top: 5vh;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    border-radius: 5px;
+  }
+
+  input[type="button"] {
+    width: 25vw;
+    height: 6.5vh;
+  }
+
+  .botoes {
+    display: block;
+    margin: 3.5vh auto;
+  }
 }
