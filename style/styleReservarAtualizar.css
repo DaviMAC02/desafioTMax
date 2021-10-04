@@ -4,6 +4,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -71,8 +72,8 @@ section {
 }
 
 section div.imagem {
-  width: 12vw;
-  height: 12vw;
+  width: 15vw;
+  height: 15vw;
   background-image: url("../assets/fotoLivro.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,6 +95,46 @@ textarea {
   margin: 5px auto;
 }
 
+.botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+input[type="button"] {
+  width: 8.93vw;
+  height: 7.27vh;
+  margin-right: 2.29vw;
+}
+
+input[type="button"]#reservar {
+  background: var(--base-color);
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+input[type="button"]#reservar:hover {
+  cursor: pointer;
+  background: white;
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
+}
+
+input[type="button"]#atualizar {
+  background: white;
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
+  transition: 0.5s;
+}
+
+input[type="button"]#atualizar:hover {
+  cursor: pointer;
+  background: var(--base-color);
+  color: white;
+  border: none;
+}
+
 @media screen and (max-width: 1000px) {
   .logo {
     display: none;
@@ -110,7 +151,7 @@ textarea {
     height: 50px;
   }
 
-  div.mobile .container {
+  div.container.mobile {
     display: flex;
     flex-direction: row;
   }
@@ -141,8 +182,24 @@ textarea {
   }
 
   section div.imagem {
-    background-image: url("../assets/fotoLivro.svg");
-    width: 500px;
-    height: 50px;
+    width: 45vw;
+    height: 45vw;
+  }
+
+  form {
+    width: 80vw;
+  }
+
+  input[type="button"] {
+    width: 25vw;
+    height: 6.5vh;
+    border-radius: 5px;
+    margin-bottom: 1.5vh;
+  }
+
+  .botoes {
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
   }
 }
