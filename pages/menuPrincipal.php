@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <a href="../pages/menuPrincipal.html">
+        <a href="../pages/menuPrincipal.php">
             <h1>Biblioteca</h1>
         </a>
         <div class="logo"></div>
@@ -45,7 +45,7 @@
                 <a href="">
                     <li>Literatura Estrangeira</li>
                 </a>
-                <a href="adicionar.html">
+                <a href="adicionar.php">
                     <li>Adicionar Livro</li>
                 </a>
             </ul>
@@ -83,7 +83,7 @@
                         <li class="list-group-item">Literatura Estrangeira</li>
                     </a>
 
-                    <a href="adicionar.html">
+                    <a href="adicionar.php">
                         <li class="list-group-item">Adicionar Livro</li>
                     </a>
 
@@ -194,7 +194,7 @@
                 <div class="imagemCapa"></div>
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="reservarAtualizar.html">
+                <a href="reservarAtualizar.php">
                     <div class="reservar">Reservar/Alterar</div>
                 </a>
             </div>
