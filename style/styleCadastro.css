@@ -95,20 +95,20 @@ input[type="text"] {
   margin-top: 8.13vh;
 }
 
-input[type="button"] {
+ #signup {
   width: 8.93vw;
   height: 7.27vh;
   margin-right: 2.29vw;
 }
 
-input[type="button"]#signup {
+ #signup {
   background: var(--base-color);
   color: white;
   border: none;
   transition: 0.5s;
 }
 
-input[type="button"]#signup:hover {
+ #signup:hover {
   cursor: pointer;
   background: white;
   color: var(--base-color);
@@ -170,7 +170,7 @@ input[type="button"]#signup:hover {
     border-radius: 5px;
   }
 
-  input[type="button"] {
+  input[type="submit"] {
     width: 25vw;
     height: 6.5vh;
   }
