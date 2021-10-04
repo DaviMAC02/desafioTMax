@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: none;
+}
+
+:root {
+  --hue: 18.6;
+  --base-color: hsl(var(--hue), 96.03%, 49.41%);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: 15vh;
+  background-color: white;
+  border-bottom: 1px solid var(--base-color);
+  padding: 3vh 8vw;
+  z-index: 1;
+}
+
+h1 {
+  color: var(--base-color);
+}
+
+.logo {
+  background-image: url("../assets/fotoLivroLogo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 6vw;
+  height: 6vw;
+}
+
+.iconMenu {
+  display: none;
+  opacity: 0;
+}
+
+div .menuMobile {
+  display: none;
+}
+
+div .box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 15vh;
+  padding-top: 15vh;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 15vh;
+  padding-top: 6vh;
+}
+
+section div.imagem {
+  width: 15vw;
+  height: 15vw;
+  background-image: url("../assets/fotoLivro.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0vh auto;
+}
+
+form {
+  width: 38.36vw;
+  margin-top: 6.34vh;
+  margin: 0 auto;
+}
+
+input[type="text"],
+textarea {
+  height: 7.22vh;
+  border: 1px solid #c1bbbb;
+  padding: 3px 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px auto;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+input[type="button"] {
+  width: 8.93vw;
+  height: 7.27vh;
+  margin-right: 2.29vw;
+}
+
+input[type="button"]#adicionar {
+  background: var(--base-color);
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+input[type="button"]#adicionar:hover {
+  cursor: pointer;
+  background: white;
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+    opacity: 0;
+  }
+
+  .iconMenu {
+    display: block;
+    opacity: 1;
+    background-image: url("../assets/iconeMenu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+  }
+
+  div.container.mobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.mobile .menuMobile {
+    display: block;
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+  }
+
+  div.mobile .menuMobile ul {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+
+  div.mobile .menuMobile ul li {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  section div.imagem {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  form {
+    width: 80vw;
+  }
+
+  input[type="button"] {
+    width: 25vw;
+    height: 6.5vh;
+    border-radius: 5px;
+    margin-bottom: 1.5vh;
+  }
+
+  .botoes {
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
