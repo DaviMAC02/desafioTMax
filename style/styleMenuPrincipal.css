@@ -43,6 +43,11 @@ h1 {
   height: 6vw;
 }
 
+.iconMenu {
+  display: none;
+  opacity: 0;
+}
+
 .menuSelecao {
   left: 0;
   display: flex;
@@ -113,7 +118,7 @@ h1 {
   color: var(--base-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.875rem;
+  font-size: 1rem;
 }
 
 .reservar:hover {
@@ -128,4 +133,52 @@ ul a li {
 
 ul a li:hover {
   background-color: rgb(200, 200, 200);
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+    opacity: 0;
+  }
+
+  .iconMenu {
+    display: block;
+    opacity: 1;
+    background-image: url("../assets/iconeMenu.svg");
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+  }
+
+  div.mobile .menuMobile {
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+  }
+
+  div.mobile .menuSelecao {
+    display: none;
+  }
+
+  div.mobile .livrosBox {
+    display: none;
+  }
+
+  div.mobile .menuMobile ul {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+
+  div.mobile .menuMobile ul li {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
