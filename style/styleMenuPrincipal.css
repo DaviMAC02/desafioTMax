@@ -144,7 +144,7 @@ ul a li:hover {
   .iconMenu {
     display: block;
     opacity: 1;
-    background-image: url("../assets/iconeMenu.svg");
+    background-image: url("../assets/iconeMenu.png");
     background-size: contain;
     width: 50px;
     height: 50px;
