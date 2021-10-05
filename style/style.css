@@ -94,20 +94,21 @@ input[type="password"] {
   margin-top: 11.13vh;
 }
 
-input[type="button"] {
+input[type="button"],
+#login {
   width: 8.93vw;
   height: 7.27vh;
   margin-right: 2.29vw;
 }
 
-input[type="button"]#login {
+#login {
   background: var(--base-color);
   color: white;
   border: none;
   transition: 0.5s;
 }
 
-input[type="button"]#login:hover {
+#login:hover {
   cursor: pointer;
   background: white;
   color: var(--base-color);
@@ -182,7 +183,8 @@ input[type="button"]#signup:hover {
     border-radius: 5px;
   }
 
-  input[type="button"] {
+  input[type="button"],
+  #login {
     width: 25vw;
     height: 6.5vh;
   }

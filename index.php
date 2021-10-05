@@ -26,11 +26,11 @@
             <section>
                 <h2>Biblioteca exclusiva para funcionários da TMax</h2>
                 <p class="boasVindas">Bem vindo de volta! Entre ou cadastre-se.</p>
-                <form action="">
+                <form action="controller/login_controller.php" method="POST">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="password" name="password" id="password" placeholder="Senha">
                     <div class="botoes">
-                        <input type="button" value="Login" id="login">
+                        <input type="submit" value="Login" id="login">
                         <input type="button" value="Sign Up" id="signup">
                     </div>
                 </form>

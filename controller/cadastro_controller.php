@@ -1,7 +1,5 @@
 <?php
-//require_once 'connect.php';
 require_once '../model/Usuario.php';
-
 
 if(isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["password"])){
     $user = new Usuario($_POST["nome"], $_POST["email"], $_POST["password"]);
@@ -9,6 +7,8 @@ if(isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["password"]))
 }
 
 function cadastrar_usuario($user){
+
+    //Definindo valores do banco de dados 
     $servername = "localhost";
     $dbname = "desafioTMAX";
     $username = "root";

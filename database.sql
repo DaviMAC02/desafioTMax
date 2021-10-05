@@ -14,3 +14,5 @@ CREATE TABLE Livro(
     descricao TEXT NOT NULL,
     reservado TINYINT NOT NULL
 );
+
+SELECT * FROM Usuario; where email = 'a@a';
