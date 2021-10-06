@@ -12,7 +12,8 @@ CREATE TABLE Livro(
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(200) NOT NULL,
     descricao TEXT NOT NULL,
+    categoria VARCHAR(200) NOT NULL,
     reservado TINYINT NOT NULL
 );
 
-SELECT email, senha FROM Usuario where email = 'a@a';
+SELECT * FROM Livro;

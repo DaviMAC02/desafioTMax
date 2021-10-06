@@ -101,20 +101,17 @@ textarea {
   margin-top: 8vh;
 }
 
-input[type="button"] {
+#adicionar {
   width: 8.93vw;
   height: 7.27vh;
   margin-right: 2.29vw;
-}
-
-input[type="button"]#adicionar {
   background: var(--base-color);
   color: white;
   border: none;
   transition: 0.5s;
 }
 
-input[type="button"]#adicionar:hover {
+#adicionar:hover {
   cursor: pointer;
   background: white;
   color: var(--base-color);
@@ -176,7 +173,7 @@ input[type="button"]#adicionar:hover {
     width: 80vw;
   }
 
-  input[type="button"] {
+  #adicionar {
     width: 25vw;
     height: 6.5vh;
     border-radius: 5px;

@@ -49,4 +49,3 @@ function consultar_usuario($email, $senha){
     }
 }
 
-// die();

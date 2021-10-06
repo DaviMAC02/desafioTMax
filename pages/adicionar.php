@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/styleAdicionar.css">
-    <title>Reservar e Atualizar</title>
+    <title>Adicionar e Alterar</title>
 </head>
 
 <body>
@@ -63,11 +63,12 @@
     <div class="box">
         <section>
             <div class="imagem"></div>
-            <form action="">
-                <input type="text" placeholder="Titulo" value="Titulo">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Descrição">Aqui tem uma descrição</textarea>
+            <form action="../controller/adicionar_alterar_controller.php" method="POST">
+                <input type="text" placeholder="Titulo" value="Titulo" name="titulo">
+                <input type="text" placeholder="Categoria" value="Categoria" name="categoria">
+                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição">Aqui tem uma descrição</textarea>
                 <div class="botoes">
-                    <input type="button" value="Adicionar" id="adicionar">
+                    <input type="submit" value="Adicionar/Alterar" id="adicionar">
                 </div>
 
             </form>

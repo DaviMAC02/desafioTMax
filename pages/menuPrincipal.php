@@ -104,7 +104,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -113,7 +113,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -122,7 +122,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -131,7 +131,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -140,7 +140,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -149,7 +149,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -158,7 +158,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -167,7 +167,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -176,7 +176,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -185,7 +185,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -194,7 +194,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
 
@@ -203,7 +203,7 @@
                 <h3 class="tituloLivro">Titulo</h3>
                 <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
                 <a href="reservarAtualizar.php">
-                    <div class="reservar">Reservar/Alterar</div>
+                    <div class="reservar">Reservar</div>
                 </a>
             </div>
         </div>

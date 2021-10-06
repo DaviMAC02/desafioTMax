@@ -5,11 +5,15 @@ Class Livro{
     private $titulo;
     private $descricao;
     private $reservado;
+    private $categoria;
 
-    function __construct($titulo, $descricao, $reservado){
+    function __construct($titulo, $descricao, $categoria,$reservado){
         $this->titulo = $titulo;
         $this->descricao = $descricao;
         $this->reservado = $reservado;
+        $this->categoria = $categoria;
+
+        
 
     }
 
@@ -35,5 +39,13 @@ Class Livro{
 
     function set_reservado($reservado){
         $this->reservado = $reservado;
+    }
+
+    function get_categoria(){
+        return $this->categoria;
+    }
+
+    function set_categoria($categoria){
+        $this->categoria = $categoria;
     }
 }
