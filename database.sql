@@ -15,4 +15,4 @@ CREATE TABLE Livro(
     reservado TINYINT NOT NULL
 );
 
-SELECT * FROM Usuario; where email = 'a@a';
+SELECT email, senha FROM Usuario where email = 'a@a';

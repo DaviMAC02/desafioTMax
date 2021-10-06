@@ -1,6 +1,10 @@
 <?php
 require_once '../model/Usuario.php';
 
+//Definindo uma sessão
+session_start();
+$_SESSION["logado"] = 0;
+
 
 if(isset($_POST["email"]) && isset($_POST["password"])){
     consultar_usuario($_POST["email"], md5($_POST["password"]));
@@ -25,29 +29,24 @@ function consultar_usuario($email, $senha){
         $stmt = $conn->prepare($sql);
         $stmt->execute([$email]); 
         while($row = $stmt->fetch()) {
-            echo $row['email']."<br />\n". $row["senha"];
+            $email_bdd = $row["email"];
+            $senha_bdd = $row["senha"];
         }
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
 
+    if($email == $email_bdd && $senha_bdd == $senha){
+        $logado = TRUE;
+    }
 
-// if ($result->num_rows > 0) {
-//   // output data of each row
-//   while($row = $result->fetch_assoc()) {
-//     if($row["email"] == $_POST["email"] && $row["senha"] == md5($_POST["password"])){
-//         $logado = TRUE;
-//     }
-// }
-// } else {
-// }
-    
-// }
-
-// if($logado){
-//     header("Location: ../pages/menuPrincipal.php");
-
-// }else{
+    if($logado){
+        $_SESSION["logado"] = 1;
+        header("Location: ../pages/menuPrincipal.php");
+    }else{
+        echo'erro';
+        header("Location: ../index.php");
+    }
 }
 
 // die();
