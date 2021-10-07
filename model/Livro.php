@@ -6,15 +6,14 @@ Class Livro{
     private $descricao;
     private $reservado;
     private $categoria;
+    private $link_imagem;
 
-    function __construct($titulo, $descricao, $categoria,$reservado){
+    function __construct($titulo, $descricao, $categoria,$reservado, $link_imagem){
         $this->titulo = $titulo;
         $this->descricao = $descricao;
         $this->reservado = $reservado;
         $this->categoria = $categoria;
-
-        
-
+        $this->link_imagem = $link_imagem;
     }
 
     function get_titulo(){
@@ -47,5 +46,13 @@ Class Livro{
 
     function set_categoria($categoria){
         $this->categoria = $categoria;
+    }
+
+    function get_link_imagem(){
+        return $this->link_imagem;
+    }
+
+    function set_link_imagem($link_imagem){
+        $this->link_imagem = $link_imagem;
     }
 }

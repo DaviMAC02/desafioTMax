@@ -128,6 +128,7 @@ input[type="button"]#signup:hover {
   color: white;
   border: none;
 }
+
 @media screen and (max-width: 950px) {
   header {
     display: block;

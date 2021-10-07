@@ -12,23 +12,27 @@ require_once '../model/Livro.php';
     $existencia_obra = FALSE;
 
     
-    $sql = "SELECT titulo, descricao FROM Livro WHERE categoria = ?";
+    $sql = "SELECT titulo, descricao, link_imagem FROM Livro WHERE categoria = ?";
     $books = array();
 
     try {
         if($_GET["categoria"] == "Todos"){
-            $sql = "SELECT titulo, descricao FROM Livro";
+            $sql = "SELECT titulo, descricao, link_imagem FROM Livro where reservado != '1'";
             $stmt = $conn->prepare($sql);
             $stmt->execute(); 
 
+        }else if($_GET["categoria"] == "Reservados"){
+            $sql = "SELECT titulo, descricao, link_imagem FROM Livro where reservado = '1'";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute(); 
         }else{
-            $sql = "SELECT titulo, descricao FROM Livro WHERE categoria = ?";
+            $sql = "SELECT titulo, descricao, link_imagem FROM Livro WHERE categoria = ? AND reservado = '0'";
             $stmt = $conn->prepare($sql);
             $stmt->execute([$_GET["categoria"]]); 
         }
 
         while($row = $stmt->fetch()) {
-            $books[$row["titulo"]] = $row["descricao"];
+            $books[$row["titulo"]] = [$row["descricao"], $row["link_imagem"]];
         }
 
         echo json_encode($books);

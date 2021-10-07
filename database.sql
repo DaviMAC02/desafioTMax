@@ -13,7 +13,8 @@ CREATE TABLE Livro(
     titulo VARCHAR(200) NOT NULL,
     descricao TEXT NOT NULL,
     categoria VARCHAR(200) NOT NULL,
-    reservado TINYINT NOT NULL
+    reservado TINYINT NOT NULL,
+    link_imagem TEXT NOT NULL
 );
 
 SELECT * FROM Livro;

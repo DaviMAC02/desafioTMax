@@ -11,8 +11,8 @@ require_once '../model/Livro.php';
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $existencia_obra = FALSE;
 
-if(isset($_POST["titulo"]) && isset($_POST["descricao"]) && isset($_POST["categoria"])){
-    $book = new Livro($_POST["titulo"], $_POST["descricao"], $_POST["categoria"], 0);
+if(isset($_POST["titulo"]) && isset($_POST["descricao"]) && isset($_POST["categoria"]) && isset($_POST["link_imagem"])){
+    $book = new Livro($_POST["titulo"], $_POST["descricao"], $_POST["categoria"], 0, $_POST["link_imagem"]);
     $existencia_obra = checar_existencia($book, $conn);
 
     if(!$existencia_obra){
@@ -46,23 +46,23 @@ function checar_existencia($book, $conn){
 
 function cadastrar_obra($book, $conn){
 
-    $sql = "INSERT INTO Livro (titulo, descricao, categoria, reservado)
-            VALUES ('".$book->get_titulo()."', '".$book->get_descricao()."', '".$book->get_categoria()."', '".$book->get_reservado()."')";
+    $sql = "INSERT INTO Livro (titulo, descricao, categoria, reservado, link_imagem)
+            VALUES ('".$book->get_titulo()."', '".$book->get_descricao()."', '".$book->get_categoria()."', '".$book->get_reservado()."','" .$book->get_link_imagem()."')";
 
     try{
         $conn->exec($sql);
         header("Location: ../pages/adicionar.php");
     }catch(PDOException $e) {
-        echo 'Fatal Error';
+        echo 'Fatal Error: '.$e;
     }
 }
 
 function alterar_obra($book, $conn){
-    $sql = "UPDATE Livro SET titulo = ?, descricao = ?, categoria = ? where titulo = ?";
+    $sql = "UPDATE Livro SET titulo = ?, descricao = ?, categoria = ?, link_imagem = ? where titulo = ?";
 
     try {
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$book->get_titulo(), $book->get_descricao(), $book->get_categoria(), $book->get_titulo()]); 
+        $stmt->execute([$book->get_titulo(), $book->get_descricao(), $book->get_categoria(), $book->get_titulo(), $book->get_link_imagem()]); 
         header("Location: ../pages/adicionar.php");
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();

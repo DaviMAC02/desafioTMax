@@ -14,9 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="imagem/png" href="../assets/fotoLivro.svg" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../style/styleAdicionar.css">
     <title>Adicionar e Alterar</title>
 </head>
@@ -64,13 +62,13 @@
         <section>
             <div class="imagem"></div>
             <form action="../controller/adicionar_alterar_controller.php" method="POST">
-                <input type="text" placeholder="Titulo" value="Titulo" name="titulo">
-                <input type="text" placeholder="Categoria" value="Categoria" name="categoria">
-                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição">Aqui tem uma descrição</textarea>
+                <input type="text" placeholder="Titulo" value="" name="titulo">
+                <input type="text" placeholder="Categoria" value="" name="categoria">
+                <input type="text" placeholder="Link Imagem" value="" name="link_imagem">
+                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição"></textarea>
                 <div class="botoes">
                     <input type="submit" value="Adicionar/Alterar" id="adicionar">
                 </div>
-
             </form>
         </section>
 
