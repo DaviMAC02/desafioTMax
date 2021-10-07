@@ -58,12 +58,13 @@ function cadastrar_obra($book, $conn){
 }
 
 function alterar_obra($book, $conn){
-    $sql = "UPDATE Livro SET titulo = ?, descricao = ?, categoria = ?, link_imagem = ? where titulo = ?";
-
+    $sql = "UPDATE Livro SET descricao = ?, categoria = ?, link_imagem = ? WHERE titulo = ?";
+echo $book->get_titulo();
     try {
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$book->get_titulo(), $book->get_descricao(), $book->get_categoria(), $book->get_titulo(), $book->get_link_imagem()]); 
+        $stmt->execute([$book->get_descricao(), $book->get_categoria(), $book->get_link_imagem(), $book->get_titulo()]); 
         header("Location: ../pages/adicionar.php");
+        echo "Alterei";
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
