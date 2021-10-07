@@ -14,7 +14,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="imagem/png" href="../assets/fotoLivro.svg" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/styleMenuPrincipal.css">
@@ -32,11 +31,9 @@
     <div class="container">
         <div class="menuMobile">
             <ul>
+                <li>Todos</li>
                 <a href="">
-                    <li>Todos</li>
-                </a>
-                <a href="">
-                    <li>Ficção</li>
+                    <li>Comédia</li>
                 </a>
                 <a href="">
                     <li>Desenvovimento Pessoal</li>
@@ -61,23 +58,17 @@
         <div class="menuSelecao">
             <div class="menuCategorias">
                 <ul class="list-group">
-
-
-                    <a href="">
-                        <li class="list-group-item">Todos</li>
-                    </a>
-
-                    <a href="">
-                        <li class="list-group-item">Ficção</li>
-                    </a>
+                    <li class="list-group-item">Todos</li>
+                    <li class="list-group-item">Comédia</li>
+                
 
                     <a href="">
                         <li class="list-group-item">Desenvovimento Pessoal</li>
                     </a>
 
-                    <a href="">
+                   
                         <li class="list-group-item">Suspense</li>
-                    </a>
+              
 
                     <a href="">
                         <li class="list-group-item">Infantil</li>
@@ -99,115 +90,10 @@
             </div>
         </div>
         <div class="livrosBox">
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
-
-            <div class="livro">
-                <div class="imagemCapa"></div>
-                <h3 class="tituloLivro">Titulo</h3>
-                <p class="descricaoLivro">Aqui tem uma descriçao de um livro.</p>
-                <a href="reservarAtualizar.php">
-                    <div class="reservar">Reservar</div>
-                </a>
-            </div>
+     
         </div>
     </div>
+    <script src="../script/jquery-3.6.0.js"></script>
     <script src="../script/scriptMenuPrincipal.js"></script>
 </body>
 

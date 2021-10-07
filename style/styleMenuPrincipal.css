@@ -130,12 +130,13 @@ div .menuMobile {
   opacity: 1;
 }
 
-ul a li {
+ul li {
   transition: 0.5s;
   text-align: center;
+  cursor: pointer;
 }
 
-ul a li:hover {
+ul li:hover {
   background-color: rgb(200, 200, 200);
 }
 
